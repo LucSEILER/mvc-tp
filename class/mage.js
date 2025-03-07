@@ -16,10 +16,10 @@ class Mage extends Character {
     }
   }
 
-  recoverEndurance(amount) {
+  recoverMana(amount) {
     this.mana += amount;
     console.log(`${this.name} récupère ${amount} points de mana.`);
   }
 }
 
-module.exports = Character;
+module.exports = mage;
