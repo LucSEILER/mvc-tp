@@ -1,5 +1,6 @@
 const Ingredient = require('./pizzeria/class/ingredient');
 const Pizza = require('./pizzeria/class/pizza');
+const Reine = require('./pizzeria/class/reine');
 
 const pate = new Ingredient('Pâte', 1.5);
 const sauceTomate = new Ingredient('Sauce Tomate', 0.5);
@@ -12,3 +13,6 @@ pizza.ajouterIngredient(fromage);
 pizza.ajouterIngredient(pepperoni);
 
 console.log(pizza);
+
+const pizzaReine = new Reine();
+console.log(pizzaReine);
