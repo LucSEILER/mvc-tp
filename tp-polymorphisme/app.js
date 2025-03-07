@@ -18,6 +18,14 @@ console.log(pizza);
 const pizzaReine = new Reine();
 console.log(pizzaReine);
 
-const customer = new Customer('Jacques', '123 Main St, Anytown, USA');
-customer.addPizza(pizzaReine);
-customer.printOrder();
+const Jacques = new Customer('Jacques', '123 Main St, Anytown, USA');
+Jacques.addPizza(pizzaReine);
+Jacques.printOrder();
+
+const Pierre = new Customer('Pierre', '123 Main St, Anytown, USA');
+Pierre.addPizza(pizzaReine);
+Pierre.printOrder();
+
+const Paul = new Customer('Paul', '123 Main St, Anytown, USA');
+Paul.addPizza(pizzaReine);
+Paul.printOrder();
