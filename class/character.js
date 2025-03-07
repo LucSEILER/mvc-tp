@@ -2,7 +2,8 @@ class Character {
     constructor(power, name, pv) {
         this.power = power;
         this.name = name;
-        this.pv = pv
+        this.pv = pv;
+        
     }
 
     attack(target) {
