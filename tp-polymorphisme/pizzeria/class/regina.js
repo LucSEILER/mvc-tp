@@ -12,4 +12,4 @@ class Regina extends Pizza {
     }
 }
 
-module.exports = Reine;
+module.exports = Regina;
