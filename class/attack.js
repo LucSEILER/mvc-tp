@@ -8,23 +8,21 @@ export class Attaque {
       this.type = type; // "mana" ou "endurance"
     }
 
-utiliser(Character) {
-    if (this.type === "mana") {
-      if (Character.mana >= this.cout) {
-        Character.mana -= this.cout;
-        console.log(`${Character.nom} utilise ${this.nom} et inflige ${this.degats} dégâts ! (Mana restant: ${Character.mana})`);
-      } else {
-        console.log(`${Character.nom} n'a pas assez de mana pour utiliser ${this.nom} !`);
+    utiliser(Character) {
+        const ressources = {
+          mana: Character.mana,
+          endurance: Character.endurance
+        };
+      
+        if (ressources[this.type] >= this.cout) {
+          ressources[this.type] -= this.cout;
+          Character[this.type] = ressources[this.type];
+      
+          console.log(`${Character.nom} utilise ${this.nom} et inflige ${this.degats} dégâts ! (${this.type} restant: ${ressources[this.type]})`);
+        } else {
+          console.log(`${Character.nom} n'a pas assez de ${this.type} pour utiliser ${this.nom} !`);
+        }
       }
-    } else if (this.type === "endurance") {
-      if (Character.endurance >= this.cout) {
-        Character.endurance -= this.cout;
-        console.log(`${Character.nom} utilise ${this.nom} et inflige ${this.degats} dégâts ! (Endurance restante: ${Character.endurance})`);
-      } else {
-        console.log(`${Character.nom} est trop fatigué(e) pour utiliser ${this.nom} !`);
-      }
-    }
-  }
   
 }
 // Création d'attaques
