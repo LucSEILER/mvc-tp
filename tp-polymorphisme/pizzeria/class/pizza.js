@@ -1,5 +1,6 @@
 class Pizza {
-    constructor(pate, sauce, tag = 'en attente') {
+    constructor(name, pate, sauce, tag = 'en attente') {
+        this.name = name;
         this.pate = pate;
         this.sauce = sauce;
         this.tag = tag;
