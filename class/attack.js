@@ -1,6 +1,6 @@
 import Character from "./character";
 
-class Attaque {
+export class Attaque {
     constructor(nom, degats, cout, type) {
       this.nom = nom;
       this.degats = degats;
@@ -28,6 +28,6 @@ utiliser(Character) {
   
 }
 // Création d'attaques
-const eclairMagique = new Attaque("Éclair Magique", 80, 20, "mana");
-const coupDepee = new Attaque("Coup d'Épée", 50, 10, "endurance");
+export const eclairMagique = new Attaque("Éclair Magique", 80, 20, "mana");
+export const coupDepee = new Attaque("Coup d'Épée", 50, 10, "endurance");
     module.exports = Attaque;
