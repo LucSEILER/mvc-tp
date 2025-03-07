@@ -1,5 +1,5 @@
 import Character from "./character";
-class Mage extends Character {
+class Paladin extends Character {
   constructor(power, name, pv, mana, endurance) {
     this.mana = mana;
     this.endurance = endurance;
@@ -39,3 +39,4 @@ class Mage extends Character {
     console.log(`${this.name} récupère ${amount} points d'endurance.`);
 }
 }
+module.exports = Paladin;
